@@ -15,5 +15,5 @@ protocol GetUsersDelegate {
 protocol GetUsers {
     var delegate: GetUsersDelegate? { get set }
     var users: [User] { get set }
-    func getUsers()
+    func getUsers(_ currentCount: Int)
 }

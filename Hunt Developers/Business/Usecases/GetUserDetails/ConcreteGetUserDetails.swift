@@ -14,7 +14,11 @@ class ConcreteGetUserDetails : GetUserDetails {
         
     func loadUserDetails(_ user: String) {
         if let delegate = delegate {
-            delegate.didLoadUserDetails(User.init(id: "0", name: "anand", userName: "abc", profileImageUrl: "", joinedAt: ""))
+            delegate.didLoadUserDetails(User.init(dictionary: ["id": "0",
+                                                               "name": "anand",
+                                                               "userName": "abc",
+                                                               "profileImageUrl": "",
+                                                               "joinedAt": ""]))
         }
     }
 }

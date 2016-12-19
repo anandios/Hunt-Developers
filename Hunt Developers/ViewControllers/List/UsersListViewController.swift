@@ -80,7 +80,7 @@ class UsersListViewController: UITableViewController {
 extension UsersListViewController : UserListViewModelDelegate {
     
     func datasourceUpdate() {
-        tableView.reloadData()
+        contentTableView?.reloadData()
         UIApplication.shared.isNetworkActivityIndicatorVisible = false;
     }
     

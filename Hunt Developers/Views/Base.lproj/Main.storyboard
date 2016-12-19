@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <stackView key="tableFooterView" opaque="NO" contentMode="scaleToFill" axis="vertical" id="6aL-rY-bk1">
-                            <rect key="frame" x="0.0" y="226" width="375" height="44"/>
+                            <rect key="frame" x="0.0" y="182" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </stackView>
                         <prototypes>
@@ -27,7 +27,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pxl-Gl-dtc" id="zO4-CB-zFQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="jxe-NS-aAH">
@@ -79,23 +79,6 @@
                                     <outlet property="name" destination="B0m-90-DeF" id="jMH-PY-Wy5"/>
                                     <outlet property="username" destination="10B-yY-alT" id="fJh-le-rdh"/>
                                 </connections>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InProgressCell" id="FZ6-So-eQy" customClass="InProgressCell" customModule="Hunt_Developers" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="118" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FZ6-So-eQy" id="UTt-jA-wa2">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="BJh-Yv-zXL">
-                                            <rect key="frame" x="177.5" y="12" width="20" height="20"/>
-                                        </activityIndicatorView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="BJh-Yv-zXL" firstAttribute="centerX" secondItem="UTt-jA-wa2" secondAttribute="centerX" id="8UB-FM-HsT"/>
-                                        <constraint firstItem="BJh-Yv-zXL" firstAttribute="centerY" secondItem="UTt-jA-wa2" secondAttribute="centerY" id="nb8-eJ-PQ9"/>
-                                    </constraints>
-                                </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -159,7 +142,7 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProfileTitleCellIdentifier" rowHeight="92" id="Y0f-Lv-8Xd" userLabel="Profile Title Cell" customClass="ProfileTitleCell" customModule="Hunt_Developers" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="92"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y0f-Lv-8Xd" id="FUz-mZ-Q15">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
@@ -204,7 +187,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MoreInfoCellIdentifier" id="K3A-Ed-vWi" customClass="MoreInfoCell" customModule="Hunt_Developers" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="148" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="147.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K3A-Ed-vWi" id="KeP-S3-sdp">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

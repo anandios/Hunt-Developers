@@ -6,16 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Hunt Developers/Business/Plugins/GetUsers/GetUsersPlugin.swift"
-            timestampString = "503820659.897715"
+            filePath = "Hunt Developers/Business/DTO/User.swift"
+            timestampString = "503829356.99535"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "getUsers(page:completionBlock:)"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "init(dictionary:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

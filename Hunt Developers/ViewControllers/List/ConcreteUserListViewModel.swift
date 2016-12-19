@@ -18,7 +18,7 @@ class ConcreteUserListViewModel : NSObject, UserListViewModel {
     
     init(appCore: AppCore) {
         self.appCore = appCore
-        self.appCore.useCases.getUsersUseCase?.getUsers()
+        self.appCore.useCases.getUsersUseCase?.getUsers(0)
         self.title = "Java Developers"
         super.init()
         self.appCore.useCases.getUsersUseCase?.delegate = self
@@ -41,7 +41,7 @@ class ConcreteUserListViewModel : NSObject, UserListViewModel {
     }
     
     public func didReachLastItem() {
-        self.appCore.useCases.getUsersUseCase?.getUsers()
+        self.appCore.useCases.getUsersUseCase?.getUsers(users.count)
     }
     
     func convertUsers(_ users:[User]) -> [UserObject] {

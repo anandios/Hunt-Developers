@@ -9,17 +9,17 @@
 import Foundation
 
 struct User {
-    let identifier: String
-    let name: String
-    let userName: String
-    let profileImageUrl: String
-    let joinedAt: String
+    var identifier: Int
+    var name: String
+    var userName: String
+    var profileImageUrl: String
+    var joinedAt: String
     
-    init(id: String, name: String, userName: String, profileImageUrl: String, joinedAt: String) {
-        self.identifier = id
-        self.name = name
-        self.userName = userName
-        self.profileImageUrl = profileImageUrl
-        self.joinedAt = joinedAt
+    init(dictionary: Dictionary<String, Any>) {
+        self.identifier = (dictionary["id"] as! NSNumber).intValue
+        self.name = ""
+        self.userName = dictionary["login"] as! String
+        self.profileImageUrl = dictionary["avatar_url"] as! String
+        self.joinedAt = ""
     }
 }
