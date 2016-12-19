@@ -11,10 +11,10 @@ import Foundation
 class ConcreteGetUserDetails : GetUserDetails {
     
     let delegate: GetUserDetailsOutputDelegate? = nil
-    
+        
     func loadUserDetails(_ user: String) {
         if let delegate = delegate {
-            delegate.didLoadUserDetails(User.init(name: "anand", userName: "abc", profileImageUrl: "", joinedAt: ""))
+            delegate.didLoadUserDetails(User.init(id: "0", name: "anand", userName: "abc", profileImageUrl: "", joinedAt: ""))
         }
     }
 }

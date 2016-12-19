@@ -11,9 +11,10 @@ import Foundation
 class PluginsContainer {
     
     public let persistenceManager: PersistenceManager
+    public let getUsersPlugin: GetUsersPlugin
     
-    init() {
+    init(configuration: Configurations) {
         persistenceManager = PersistenceManager()
+        getUsersPlugin = ConcreteGetUsersPlugin.init(baseUrlString:configuration.apiBaseUrl, session: URLSession.shared)
     }
-    
 }

@@ -33,12 +33,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             configurations = Configurations.init(backgroundColor: .blue)
         #endif
         
-        self.appCore = AppCore.init(plugins: PluginsContainer(), useCases: UseCasesContainer())
-        self.window = UIWindow.init(frame: UIScreen.main.bounds)
-        self.window?.backgroundColor = .green
-        let storyboard = UIStoryboard.init(name: storyboardName, bundle: nil)
-        router = Router.init(storyboard: storyboard, window: window!, appCore: self.appCore!)
+        let plugins = PluginsContainer.init(configuration: configurations)
+        let useCases = UseCasesContainer.init(plugins: plugins)
         
+        self.appCore = AppCore.init(plugins: plugins, useCases: useCases)
+        
+        self.window = UIWindow.init(frame: UIScreen.main.bounds)
+        
+        let storyboard = UIStoryboard.init(name: storyboardName, bundle: nil)
+        
+        router = Router.init(storyboard: storyboard, window: window!, appCore: self.appCore!)        
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

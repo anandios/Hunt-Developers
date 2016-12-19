@@ -9,6 +9,14 @@
 import Foundation
 
 class UseCasesContainer {
-    var getUsersUseCase: GetUsers? = ConcreteGetUsers()
-    var getUserDetailsUseCase: GetUserDetails? = ConcreteGetUserDetails()
+    let plugins: PluginsContainer
+    
+    var getUsersUseCase: GetUsers?
+    var getUserDetailsUseCase: GetUserDetails?
+    
+    init(plugins: PluginsContainer) {
+        self.plugins = plugins
+        self.getUsersUseCase = ConcreteGetUsers.init(getUserPlugin: plugins.getUsersPlugin)
+        self.getUserDetailsUseCase = ConcreteGetUserDetails()
+    }
 }

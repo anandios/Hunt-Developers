@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		29359DC41E07986D006A1E14 /* ConcreteUserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29359DC31E07986D006A1E14 /* ConcreteUserListViewModel.swift */; };
+		29359DC91E079983006A1E14 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29359DC81E079983006A1E14 /* PersistenceManager.swift */; };
+		29359DCE1E0799DF006A1E14 /* GetUsersPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29359DCD1E0799DF006A1E14 /* GetUsersPlugin.swift */; };
 		29552BBE1E0767CA00CF8970 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552BBD1E0767CA00CF8970 /* Configurations.swift */; };
 		29552BC41E076A1E00CF8970 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552BC11E076A1E00CF8970 /* ContentCell.swift */; };
 		29552BC51E076A1E00CF8970 /* MoreInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552BC21E076A1E00CF8970 /* MoreInfoCell.swift */; };
@@ -28,7 +30,6 @@
 		29FDC7071E0715A200EFB55D /* ConcreteGetUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC7061E0715A200EFB55D /* ConcreteGetUsers.swift */; };
 		29FDC7091E072E0A00EFB55D /* AppCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC7081E072E0A00EFB55D /* AppCore.swift */; };
 		29FDC70B1E07300C00EFB55D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC70A1E07300C00EFB55D /* Router.swift */; };
-		29FDC7111E07337000EFB55D /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC7101E07337000EFB55D /* PersistenceManager.swift */; };
 		29FDC7131E07339D00EFB55D /* PluginsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC7121E07339D00EFB55D /* PluginsContainer.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		29359DC31E07986D006A1E14 /* ConcreteUserListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcreteUserListViewModel.swift; sourceTree = "<group>"; };
+		29359DC81E079983006A1E14 /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		29359DCD1E0799DF006A1E14 /* GetUsersPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUsersPlugin.swift; sourceTree = "<group>"; };
 		29552BBD1E0767CA00CF8970 /* Configurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
 		29552BC11E076A1E00CF8970 /* ContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
 		29552BC21E076A1E00CF8970 /* MoreInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoCell.swift; sourceTree = "<group>"; };
@@ -68,7 +71,6 @@
 		29FDC7061E0715A200EFB55D /* ConcreteGetUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcreteGetUsers.swift; sourceTree = "<group>"; };
 		29FDC7081E072E0A00EFB55D /* AppCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCore.swift; sourceTree = "<group>"; };
 		29FDC70A1E07300C00EFB55D /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		29FDC7101E07337000EFB55D /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		29FDC7121E07339D00EFB55D /* PluginsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginsContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,12 +109,27 @@
 			name = ViewController;
 			sourceTree = "<group>";
 		};
-		29552BAE1E07590D00CF8970 /* Persistence */ = {
+		29359DC61E079983006A1E14 /* GetUserDetails */ = {
 			isa = PBXGroup;
 			children = (
-				29FDC7101E07337000EFB55D /* PersistenceManager.swift */,
 			);
-			name = Persistence;
+			path = GetUserDetails;
+			sourceTree = "<group>";
+		};
+		29359DC71E079983006A1E14 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				29359DC81E079983006A1E14 /* PersistenceManager.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		29359DCC1E0799DF006A1E14 /* GetUsers */ = {
+			isa = PBXGroup;
+			children = (
+				29359DCD1E0799DF006A1E14 /* GetUsersPlugin.swift */,
+			);
+			path = GetUsers;
 			sourceTree = "<group>";
 		};
 		29552BBF1E076A1E00CF8970 /* CustomViews */ = {
@@ -240,7 +257,9 @@
 		29FDC6EA1E070F8100EFB55D /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				29552BAE1E07590D00CF8970 /* Persistence */,
+				29359DCC1E0799DF006A1E14 /* GetUsers */,
+				29359DC61E079983006A1E14 /* GetUserDetails */,
+				29359DC71E079983006A1E14 /* Persistence */,
 			);
 			path = Plugins;
 			sourceTree = "<group>";
@@ -397,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29359DC41E07986D006A1E14 /* ConcreteUserListViewModel.swift in Sources */,
+				29359DCE1E0799DF006A1E14 /* GetUsersPlugin.swift in Sources */,
 				29FDC6FE1E0713B200EFB55D /* User.swift in Sources */,
 				29552BC51E076A1E00CF8970 /* MoreInfoCell.swift in Sources */,
 				29FDC6D61E0704E600EFB55D /* UserDetailsViewController.swift in Sources */,
@@ -407,6 +427,7 @@
 				29FDC7071E0715A200EFB55D /* ConcreteGetUsers.swift in Sources */,
 				29552BC61E076A1E00CF8970 /* ProfileTitleCell.swift in Sources */,
 				29FDC7031E07150100EFB55D /* UseCasesContainer.swift in Sources */,
+				29359DC91E079983006A1E14 /* PersistenceManager.swift in Sources */,
 				29F3EAEF1E05302900568313 /* AppDelegate.swift in Sources */,
 				29FDC7091E072E0A00EFB55D /* AppCore.swift in Sources */,
 				29FDC7131E07339D00EFB55D /* PluginsContainer.swift in Sources */,
@@ -414,7 +435,6 @@
 				29FDC6F71E0711DE00EFB55D /* GetUsers.swift in Sources */,
 				29FDC6D81E0704E600EFB55D /* UsersListViewController.swift in Sources */,
 				29FDC6D41E0704E600EFB55D /* Hunt_Developers.xcdatamodeld in Sources */,
-				29FDC7111E07337000EFB55D /* PersistenceManager.swift in Sources */,
 				29FDC6F61E0711DE00EFB55D /* ConcreteGetUserDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
