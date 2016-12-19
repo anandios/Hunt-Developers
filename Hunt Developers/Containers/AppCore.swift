@@ -11,9 +11,11 @@ import UIKit
 class AppCore {
     public let plugins: PluginsContainer
     public let useCases: UseCasesContainer
+    public let configurations: Configurations
     
-    init(plugins: PluginsContainer, useCases: UseCasesContainer) {
+    init(plugins: PluginsContainer, useCases: UseCasesContainer, configurations: Configurations) {
         self.plugins = plugins
         self.useCases = useCases
+        self.configurations = configurations
     }
 }

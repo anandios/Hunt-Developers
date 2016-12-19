@@ -14,6 +14,30 @@
 		29552BC41E076A1E00CF8970 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552BC11E076A1E00CF8970 /* ContentCell.swift */; };
 		29552BC51E076A1E00CF8970 /* MoreInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552BC21E076A1E00CF8970 /* MoreInfoCell.swift */; };
 		29552BC61E076A1E00CF8970 /* ProfileTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552BC31E076A1E00CF8970 /* ProfileTitleCell.swift */; };
+		29D4A82A1E07FC5A0099163F /* ConcreteUserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29359DC31E07986D006A1E14 /* ConcreteUserListViewModel.swift */; };
+		29D4A82B1E07FC5A0099163F /* GetUsersPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29359DCD1E0799DF006A1E14 /* GetUsersPlugin.swift */; };
+		29D4A82C1E07FC5A0099163F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC6FD1E0713B200EFB55D /* User.swift */; };
+		29D4A82D1E07FC5A0099163F /* MoreInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552BC21E076A1E00CF8970 /* MoreInfoCell.swift */; };
+		29D4A82E1E07FC5A0099163F /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC6C81E0704E600EFB55D /* UserDetailsViewController.swift */; };
+		29D4A82F1E07FC5A0099163F /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC6CA1E0704E600EFB55D /* UserListViewModel.swift */; };
+		29D4A8301E07FC5A0099163F /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552BC11E076A1E00CF8970 /* ContentCell.swift */; };
+		29D4A8311E07FC5A0099163F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC70A1E07300C00EFB55D /* Router.swift */; };
+		29D4A8321E07FC5A0099163F /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552BBD1E0767CA00CF8970 /* Configurations.swift */; };
+		29D4A8331E07FC5A0099163F /* ConcreteGetUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC7061E0715A200EFB55D /* ConcreteGetUsers.swift */; };
+		29D4A8341E07FC5A0099163F /* ProfileTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552BC31E076A1E00CF8970 /* ProfileTitleCell.swift */; };
+		29D4A8351E07FC5A0099163F /* UseCasesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC7021E07150100EFB55D /* UseCasesContainer.swift */; };
+		29D4A8361E07FC5A0099163F /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29359DC81E079983006A1E14 /* PersistenceManager.swift */; };
+		29D4A8371E07FC5A0099163F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3EAEE1E05302900568313 /* AppDelegate.swift */; };
+		29D4A8381E07FC5A0099163F /* AppCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC7081E072E0A00EFB55D /* AppCore.swift */; };
+		29D4A8391E07FC5A0099163F /* PluginsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC7121E07339D00EFB55D /* PluginsContainer.swift */; };
+		29D4A83A1E07FC5A0099163F /* GetUserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC6FA1E07137200EFB55D /* GetUserDetails.swift */; };
+		29D4A83B1E07FC5A0099163F /* GetUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC6F51E0711DE00EFB55D /* GetUsers.swift */; };
+		29D4A83C1E07FC5A0099163F /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC6CB1E0704E600EFB55D /* UsersListViewController.swift */; };
+		29D4A83D1E07FC5A0099163F /* Hunt_Developers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC6C21E0704E600EFB55D /* Hunt_Developers.xcdatamodeld */; };
+		29D4A83E1E07FC5A0099163F /* ConcreteGetUserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC6F31E0711DE00EFB55D /* ConcreteGetUserDetails.swift */; };
+		29D4A8411E07FC5A0099163F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FDC6CF1E0704E600EFB55D /* Main.storyboard */; };
+		29D4A8421E07FC5A0099163F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29FDC6C51E0704E600EFB55D /* Assets.xcassets */; };
+		29D4A8431E07FC5A0099163F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FDC6CD1E0704E600EFB55D /* LaunchScreen.storyboard */; };
 		29F3EAEF1E05302900568313 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3EAEE1E05302900568313 /* AppDelegate.swift */; };
 		29FDC6D41E0704E600EFB55D /* Hunt_Developers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC6C21E0704E600EFB55D /* Hunt_Developers.xcdatamodeld */; };
 		29FDC6D51E0704E600EFB55D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29FDC6C51E0704E600EFB55D /* Assets.xcassets */; };
@@ -51,6 +75,8 @@
 		29552BC11E076A1E00CF8970 /* ContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
 		29552BC21E076A1E00CF8970 /* MoreInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoCell.swift; sourceTree = "<group>"; };
 		29552BC31E076A1E00CF8970 /* ProfileTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTitleCell.swift; sourceTree = "<group>"; };
+		29D4A8471E07FC5A0099163F /* Hunt Developers2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hunt Developers2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29D4A8481E07FC5A0099163F /* Hunt Developers copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Hunt Developers copy-Info.plist"; path = "/Users/anandrahulsingh/Library/Mobile Documents/com~apple~CloudDocs/Project/Hunt Developers/Hunt Developers copy-Info.plist"; sourceTree = "<absolute>"; };
 		29F3EAEB1E05302900568313 /* Hunt Developers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hunt Developers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F3EAEE1E05302900568313 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29F3EAFD1E05302900568313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +101,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		29D4A83F1E07FC5A0099163F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29F3EAE81E05302900568313 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -156,6 +189,7 @@
 				29F3EAED1E05302900568313 /* Hunt Developers */,
 				29F3EB051E05302900568313 /* Hunt DevelopersTests */,
 				29F3EAEC1E05302900568313 /* Products */,
+				29D4A8481E07FC5A0099163F /* Hunt Developers copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,6 +198,7 @@
 			children = (
 				29F3EAEB1E05302900568313 /* Hunt Developers.app */,
 				29F3EB021E05302900568313 /* Hunt DevelopersTests.xctest */,
+				29D4A8471E07FC5A0099163F /* Hunt Developers2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -314,6 +349,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		29D4A8281E07FC5A0099163F /* Hunt Developers2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29D4A8441E07FC5A0099163F /* Build configuration list for PBXNativeTarget "Hunt Developers2" */;
+			buildPhases = (
+				29D4A8291E07FC5A0099163F /* Sources */,
+				29D4A83F1E07FC5A0099163F /* Frameworks */,
+				29D4A8401E07FC5A0099163F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hunt Developers2";
+			productName = "Hunt Developers";
+			productReference = 29D4A8471E07FC5A0099163F /* Hunt Developers2.app */;
+			productType = "com.apple.product-type.application";
+		};
 		29F3EAEA1E05302900568313 /* Hunt Developers */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29F3EB0B1E05302900568313 /* Build configuration list for PBXNativeTarget "Hunt Developers" */;
@@ -386,11 +438,22 @@
 			targets = (
 				29F3EAEA1E05302900568313 /* Hunt Developers */,
 				29F3EB011E05302900568313 /* Hunt DevelopersTests */,
+				29D4A8281E07FC5A0099163F /* Hunt Developers2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		29D4A8401E07FC5A0099163F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29D4A8411E07FC5A0099163F /* Main.storyboard in Resources */,
+				29D4A8421E07FC5A0099163F /* Assets.xcassets in Resources */,
+				29D4A8431E07FC5A0099163F /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29F3EAE91E05302900568313 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -411,6 +474,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		29D4A8291E07FC5A0099163F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29D4A82A1E07FC5A0099163F /* ConcreteUserListViewModel.swift in Sources */,
+				29D4A82B1E07FC5A0099163F /* GetUsersPlugin.swift in Sources */,
+				29D4A82C1E07FC5A0099163F /* User.swift in Sources */,
+				29D4A82D1E07FC5A0099163F /* MoreInfoCell.swift in Sources */,
+				29D4A82E1E07FC5A0099163F /* UserDetailsViewController.swift in Sources */,
+				29D4A82F1E07FC5A0099163F /* UserListViewModel.swift in Sources */,
+				29D4A8301E07FC5A0099163F /* ContentCell.swift in Sources */,
+				29D4A8311E07FC5A0099163F /* Router.swift in Sources */,
+				29D4A8321E07FC5A0099163F /* Configurations.swift in Sources */,
+				29D4A8331E07FC5A0099163F /* ConcreteGetUsers.swift in Sources */,
+				29D4A8341E07FC5A0099163F /* ProfileTitleCell.swift in Sources */,
+				29D4A8351E07FC5A0099163F /* UseCasesContainer.swift in Sources */,
+				29D4A8361E07FC5A0099163F /* PersistenceManager.swift in Sources */,
+				29D4A8371E07FC5A0099163F /* AppDelegate.swift in Sources */,
+				29D4A8381E07FC5A0099163F /* AppCore.swift in Sources */,
+				29D4A8391E07FC5A0099163F /* PluginsContainer.swift in Sources */,
+				29D4A83A1E07FC5A0099163F /* GetUserDetails.swift in Sources */,
+				29D4A83B1E07FC5A0099163F /* GetUsers.swift in Sources */,
+				29D4A83C1E07FC5A0099163F /* UsersListViewController.swift in Sources */,
+				29D4A83D1E07FC5A0099163F /* Hunt_Developers.xcdatamodeld in Sources */,
+				29D4A83E1E07FC5A0099163F /* ConcreteGetUserDetails.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29F3EAE71E05302900568313 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -476,6 +567,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		29D4A8451E07FC5A0099163F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Hunt Developers copy-Info.plist";
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.noorg.Hunt-Developers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		29D4A8461E07FC5A0099163F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Hunt Developers copy-Info.plist";
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.noorg.Hunt-Developers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		29F3EB091E05302900568313 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -632,6 +753,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		29D4A8441E07FC5A0099163F /* Build configuration list for PBXNativeTarget "Hunt Developers2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29D4A8451E07FC5A0099163F /* Debug */,
+				29D4A8461E07FC5A0099163F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		29F3EAE61E05302900568313 /* Build configuration list for PBXProject "Hunt Developers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let plugins = PluginsContainer.init(configuration: configurations)
         let useCases = UseCasesContainer.init(plugins: plugins)
         
-        self.appCore = AppCore.init(plugins: plugins, useCases: useCases)
+        self.appCore = AppCore.init(plugins: plugins, useCases: useCases, configurations: configurations)
         
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         
