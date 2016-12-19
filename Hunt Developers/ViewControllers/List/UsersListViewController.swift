@@ -13,7 +13,11 @@ class UsersListViewController: UITableViewController {
     @IBOutlet var noContentView: UIView!
     @IBOutlet var noContentLabel: UILabel!
     var contentTableView: UITableView?
-    var model: UserListViewModel?
+    var model: UserListViewModel? {
+        didSet {
+            model?.delegate = self
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

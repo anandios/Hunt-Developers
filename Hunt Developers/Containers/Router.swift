@@ -48,7 +48,6 @@ class Router : NSObject {
                     
                     let userListViewController = mainStoryboard.instantiateViewController(withIdentifier: "UsersListViewController") as! UsersListViewController
                     userListViewController.view.backgroundColor = appCore.configurations.backgroundColor
-                    
                     firstViewController = userListViewController
                     userListViewController.model = viewModel
             
