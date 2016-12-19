@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29359DC41E07986D006A1E14 /* ConcreteUserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29359DC31E07986D006A1E14 /* ConcreteUserListViewModel.swift */; };
 		29552BBE1E0767CA00CF8970 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552BBD1E0767CA00CF8970 /* Configurations.swift */; };
 		29552BC41E076A1E00CF8970 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552BC11E076A1E00CF8970 /* ContentCell.swift */; };
 		29552BC51E076A1E00CF8970 /* MoreInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552BC21E076A1E00CF8970 /* MoreInfoCell.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29359DC31E07986D006A1E14 /* ConcreteUserListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcreteUserListViewModel.swift; sourceTree = "<group>"; };
 		29552BBD1E0767CA00CF8970 /* Configurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
 		29552BC11E076A1E00CF8970 /* ContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
 		29552BC21E076A1E00CF8970 /* MoreInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoCell.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				29FDC6CA1E0704E600EFB55D /* UserListViewModel.swift */,
+				29359DC31E07986D006A1E14 /* ConcreteUserListViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29359DC41E07986D006A1E14 /* ConcreteUserListViewModel.swift in Sources */,
 				29FDC6FE1E0713B200EFB55D /* User.swift in Sources */,
 				29552BC51E076A1E00CF8970 /* MoreInfoCell.swift in Sources */,
 				29FDC6D61E0704E600EFB55D /* UserDetailsViewController.swift in Sources */,
