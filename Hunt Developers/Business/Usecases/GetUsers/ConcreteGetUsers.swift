@@ -42,7 +42,9 @@ class ConcreteGetUsers: GetUsers {
             }
             
             if let users = users {
-                self?.users.append(contentsOf: users)
+
+                let sortedUsers = users.sorted { $0.userName.localizedCaseInsensitiveCompare($1.userName) == ComparisonResult.orderedAscending }
+                self?.users.append(contentsOf: sortedUsers)
                 _ = self?.loadUsersFromCache(currentCount)
             }
         })
@@ -55,12 +57,15 @@ class ConcreteGetUsers: GetUsers {
         if users.count > 0 && currentCount < users.count {
             let slice = users[0..<(currentCount+maxItemsPerReturn)]
             
+            let slicedArray = [] + slice
+            let sortedUsers = slicedArray.sorted { $0.userName.localizedCaseInsensitiveCompare($1.userName) == ComparisonResult.orderedAscending }
+            
             if Thread.isMainThread {
-                delegate?.didLoadUsers([] + slice)
+                delegate?.didLoadUsers(sortedUsers)
             } else {
                 DispatchQueue.main.sync {[weak self] in
                     if let delegate = self?.delegate {
-                        delegate.didLoadUsers([] + slice)
+                        delegate.didLoadUsers(sortedUsers)
                     }
                 }
                 
