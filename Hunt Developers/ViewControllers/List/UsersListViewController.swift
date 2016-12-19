@@ -10,18 +10,19 @@ import UIKit
 
 class UsersListViewController: UITableViewController {
     
-    let model = UserListViewModel()
     @IBOutlet var noContentView: UIView!
     @IBOutlet var noContentLabel: UILabel!
     var contentTableView: UITableView?
+    var model: UserListViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = model.title
+
+        self.title = model?.title ?? ""
         
         contentTableView = self.tableView
         self.view = noContentView
-        self.model.delegate = self
+        self.model?.delegate = self
         
         Timer.scheduledTimer(withTimeInterval: 2, repeats: false, block: { [weak self](timer) in
             if let tableView = self?.contentTableView {
@@ -32,7 +33,12 @@ class UsersListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return model.numberOfItems
+    
+        if let users = model?.users {
+            return users.count
+        }
+        
+        return 0
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -41,10 +47,17 @@ class UsersListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell =  tableView.dequeueReusableCell(withIdentifier: "ContentCell", for: indexPath) as! ContentCell
-        cell.name.text = model.name
-        cell.username.text = model.username
-        cell.joinedAt.text = model.joinedAt
-    
+        
+        if let userObject = model?.users[indexPath.row] {
+            cell.name.text = userObject.name 
+            cell.username.text = userObject.userName
+            cell.joinedAt.text = userObject.joinedAt
+        } else {
+            cell.name.text = "-"
+            cell.username.text = "-"
+            cell.joinedAt.text = "-"
+        }
+        
         return cell
     }
     
@@ -52,13 +65,13 @@ class UsersListViewController: UITableViewController {
         let currentOffset = scrollView.contentOffset.y
         let maximumOffset = scrollView.contentSize.height - scrollView.frame.size.height
         if maximumOffset - currentOffset <= 10.0 {
-            self.model.didReachLastItem()
+            self.model?.didReachLastItem()
             UIApplication.shared.isNetworkActivityIndicatorVisible = true;
         }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "LoadDetailsSegue", sender: self)
+        model?.didSelectItem(indexPath.row)
     }
 }
 

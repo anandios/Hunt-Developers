@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  UserDetailsViewController.swift
 //  Hunt Developers
 //
 //  Created by Anand Rahul Singh on 12/17/16.
@@ -8,16 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class UserDetailsViewController: UIViewController {
     let profileSectionIndex = 0
     let numberOfRowsInProfileSection = 1
     let profileRowHeight = CGFloat(92)
-    
     let totalSections = 2
     let numberOfRowsInDetailsSection = 5
     let detailRowHeight = CGFloat(44)
-    
-    @IBOutlet var tableView : UITableView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +22,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController : UITableViewDataSource {
+extension UserDetailsViewController : UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if (section == profileSectionIndex) {
@@ -33,7 +30,6 @@ extension ViewController : UITableViewDataSource {
         }
         
         return numberOfRowsInDetailsSection
-       
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -59,7 +55,7 @@ extension ViewController : UITableViewDataSource {
     }
 }
 
-extension ViewController : UITableViewDelegate {
+extension UserDetailsViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == profileSectionIndex {
             return profileRowHeight

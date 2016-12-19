@@ -13,7 +13,7 @@
         <!--Users List View Controller-->
         <scene sceneID="y6v-40-GJq">
             <objects>
-                <tableViewController id="xfv-iB-qaF" customClass="UsersListViewController" customModule="Hunt_Developers" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="UsersListViewController" id="xfv-iB-qaF" customClass="UsersListViewController" customModule="Hunt_Developers" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kJg-fp-Hj1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,7 +107,6 @@
                     <connections>
                         <outlet property="noContentLabel" destination="vPA-tZ-TRf" id="du8-IB-iXC"/>
                         <outlet property="noContentView" destination="1xL-rc-EU1" id="Kt8-YK-DhS"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="LoadDetailsSegue" id="KPb-AO-3SK"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="opD-H4-spM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -137,10 +136,10 @@
             </objects>
             <point key="canvasLocation" x="173.91304347826087" y="24.456521739130437"/>
         </scene>
-        <!--View Controller-->
+        <!--User Details View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController extendedLayoutIncludesOpaqueBars="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Hunt_Developers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserDetailsViewController" extendedLayoutIncludesOpaqueBars="YES" id="BYZ-38-t0r" customClass="UserDetailsViewController" customModule="Hunt_Developers" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>

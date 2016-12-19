@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29552BBE1E0767CA00CF8970 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552BBD1E0767CA00CF8970 /* Configurations.swift */; };
+		29552BC41E076A1E00CF8970 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552BC11E076A1E00CF8970 /* ContentCell.swift */; };
+		29552BC51E076A1E00CF8970 /* MoreInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552BC21E076A1E00CF8970 /* MoreInfoCell.swift */; };
+		29552BC61E076A1E00CF8970 /* ProfileTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29552BC31E076A1E00CF8970 /* ProfileTitleCell.swift */; };
 		29F3EAEF1E05302900568313 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3EAEE1E05302900568313 /* AppDelegate.swift */; };
-		29F3EB071E05302900568313 /* Hunt_DevelopersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3EB061E05302900568313 /* Hunt_DevelopersTests.swift */; };
-		29FDC6D11E0704E600EFB55D /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC6BE1E0704E600EFB55D /* ContentCell.swift */; };
-		29FDC6D21E0704E600EFB55D /* MoreInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC6BF1E0704E600EFB55D /* MoreInfoCell.swift */; };
-		29FDC6D31E0704E600EFB55D /* ProfileTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC6C01E0704E600EFB55D /* ProfileTitleCell.swift */; };
 		29FDC6D41E0704E600EFB55D /* Hunt_Developers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC6C21E0704E600EFB55D /* Hunt_Developers.xcdatamodeld */; };
 		29FDC6D51E0704E600EFB55D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29FDC6C51E0704E600EFB55D /* Assets.xcassets */; };
-		29FDC6D61E0704E600EFB55D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC6C81E0704E600EFB55D /* ViewController.swift */; };
+		29FDC6D61E0704E600EFB55D /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC6C81E0704E600EFB55D /* UserDetailsViewController.swift */; };
 		29FDC6D71E0704E600EFB55D /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC6CA1E0704E600EFB55D /* UserListViewModel.swift */; };
 		29FDC6D81E0704E600EFB55D /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC6CB1E0704E600EFB55D /* UsersListViewController.swift */; };
 		29FDC6D91E0704E600EFB55D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FDC6CD1E0704E600EFB55D /* LaunchScreen.storyboard */; };
 		29FDC6DA1E0704E600EFB55D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FDC6CF1E0704E600EFB55D /* Main.storyboard */; };
+		29FDC6F61E0711DE00EFB55D /* ConcreteGetUserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC6F31E0711DE00EFB55D /* ConcreteGetUserDetails.swift */; };
+		29FDC6F71E0711DE00EFB55D /* GetUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC6F51E0711DE00EFB55D /* GetUsers.swift */; };
+		29FDC6FB1E07137200EFB55D /* GetUserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC6FA1E07137200EFB55D /* GetUserDetails.swift */; };
+		29FDC6FE1E0713B200EFB55D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC6FD1E0713B200EFB55D /* User.swift */; };
+		29FDC7031E07150100EFB55D /* UseCasesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC7021E07150100EFB55D /* UseCasesContainer.swift */; };
+		29FDC7071E0715A200EFB55D /* ConcreteGetUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC7061E0715A200EFB55D /* ConcreteGetUsers.swift */; };
+		29FDC7091E072E0A00EFB55D /* AppCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC7081E072E0A00EFB55D /* AppCore.swift */; };
+		29FDC70B1E07300C00EFB55D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC70A1E07300C00EFB55D /* Router.swift */; };
+		29FDC7111E07337000EFB55D /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC7101E07337000EFB55D /* PersistenceManager.swift */; };
+		29FDC7131E07339D00EFB55D /* PluginsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDC7121E07339D00EFB55D /* PluginsContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,22 +42,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29552BBD1E0767CA00CF8970 /* Configurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
+		29552BC11E076A1E00CF8970 /* ContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
+		29552BC21E076A1E00CF8970 /* MoreInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoCell.swift; sourceTree = "<group>"; };
+		29552BC31E076A1E00CF8970 /* ProfileTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTitleCell.swift; sourceTree = "<group>"; };
 		29F3EAEB1E05302900568313 /* Hunt Developers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hunt Developers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F3EAEE1E05302900568313 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29F3EAFD1E05302900568313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29F3EB021E05302900568313 /* Hunt DevelopersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hunt DevelopersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		29F3EB061E05302900568313 /* Hunt_DevelopersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hunt_DevelopersTests.swift; sourceTree = "<group>"; };
 		29F3EB081E05302900568313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29FDC6BE1E0704E600EFB55D /* ContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
-		29FDC6BF1E0704E600EFB55D /* MoreInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoCell.swift; sourceTree = "<group>"; };
-		29FDC6C01E0704E600EFB55D /* ProfileTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTitleCell.swift; sourceTree = "<group>"; };
 		29FDC6C31E0704E600EFB55D /* Hunt_Developers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hunt_Developers.xcdatamodel; sourceTree = "<group>"; };
 		29FDC6C51E0704E600EFB55D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		29FDC6C81E0704E600EFB55D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		29FDC6C81E0704E600EFB55D /* UserDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 		29FDC6CA1E0704E600EFB55D /* UserListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		29FDC6CB1E0704E600EFB55D /* UsersListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
 		29FDC6CE1E0704E600EFB55D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29FDC6D01E0704E600EFB55D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		29FDC6F31E0711DE00EFB55D /* ConcreteGetUserDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcreteGetUserDetails.swift; sourceTree = "<group>"; };
+		29FDC6F51E0711DE00EFB55D /* GetUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUsers.swift; sourceTree = "<group>"; };
+		29FDC6FA1E07137200EFB55D /* GetUserDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUserDetails.swift; sourceTree = "<group>"; };
+		29FDC6FD1E0713B200EFB55D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		29FDC7021E07150100EFB55D /* UseCasesContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCasesContainer.swift; sourceTree = "<group>"; };
+		29FDC7061E0715A200EFB55D /* ConcreteGetUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcreteGetUsers.swift; sourceTree = "<group>"; };
+		29FDC7081E072E0A00EFB55D /* AppCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCore.swift; sourceTree = "<group>"; };
+		29FDC70A1E07300C00EFB55D /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		29FDC7101E07337000EFB55D /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		29FDC7121E07339D00EFB55D /* PluginsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginsContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +88,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		292A31A81E076C8500D0CCB9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				29FDC6CA1E0704E600EFB55D /* UserListViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		292A31A91E076C8D00D0CCB9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				29FDC6CB1E0704E600EFB55D /* UsersListViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		29552BAE1E07590D00CF8970 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				29FDC7101E07337000EFB55D /* PersistenceManager.swift */,
+			);
+			name = Persistence;
+			sourceTree = "<group>";
+		};
+		29552BBF1E076A1E00CF8970 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				29552BC01E076A1E00CF8970 /* CustomCells */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		29552BC01E076A1E00CF8970 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				29552BC11E076A1E00CF8970 /* ContentCell.swift */,
+				29552BC21E076A1E00CF8970 /* MoreInfoCell.swift */,
+				29552BC31E076A1E00CF8970 /* ProfileTitleCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
 		29F3EAE21E05302900568313 = {
 			isa = PBXGroup;
 			children = (
@@ -91,11 +153,12 @@
 			children = (
 				29F3EAEE1E05302900568313 /* AppDelegate.swift */,
 				29F3EAFD1E05302900568313 /* Info.plist */,
-				29FDC6BC1E0704E600EFB55D /* CustomViews */,
+				29FDC7011E07150100EFB55D /* Containers */,
 				29FDC6C11E0704E600EFB55D /* Persistence */,
 				29FDC6C41E0704E600EFB55D /* Resources */,
 				29FDC6C61E0704E600EFB55D /* ViewControllers */,
 				29FDC6CC1E0704E600EFB55D /* Views */,
+				29FDC6E91E070F8100EFB55D /* Business */,
 			);
 			path = "Hunt Developers";
 			sourceTree = "<group>";
@@ -103,28 +166,9 @@
 		29F3EB051E05302900568313 /* Hunt DevelopersTests */ = {
 			isa = PBXGroup;
 			children = (
-				29F3EB061E05302900568313 /* Hunt_DevelopersTests.swift */,
 				29F3EB081E05302900568313 /* Info.plist */,
 			);
 			path = "Hunt DevelopersTests";
-			sourceTree = "<group>";
-		};
-		29FDC6BC1E0704E600EFB55D /* CustomViews */ = {
-			isa = PBXGroup;
-			children = (
-				29FDC6BD1E0704E600EFB55D /* CustomCells */,
-			);
-			path = CustomViews;
-			sourceTree = "<group>";
-		};
-		29FDC6BD1E0704E600EFB55D /* CustomCells */ = {
-			isa = PBXGroup;
-			children = (
-				29FDC6BE1E0704E600EFB55D /* ContentCell.swift */,
-				29FDC6BF1E0704E600EFB55D /* MoreInfoCell.swift */,
-				29FDC6C01E0704E600EFB55D /* ProfileTitleCell.swift */,
-			);
-			path = CustomCells;
 			sourceTree = "<group>";
 		};
 		29FDC6C11E0704E600EFB55D /* Persistence */ = {
@@ -155,7 +199,7 @@
 		29FDC6C71E0704E600EFB55D /* Details */ = {
 			isa = PBXGroup;
 			children = (
-				29FDC6C81E0704E600EFB55D /* ViewController.swift */,
+				29FDC6C81E0704E600EFB55D /* UserDetailsViewController.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -163,8 +207,8 @@
 		29FDC6C91E0704E600EFB55D /* List */ = {
 			isa = PBXGroup;
 			children = (
-				29FDC6CA1E0704E600EFB55D /* UserListViewModel.swift */,
-				29FDC6CB1E0704E600EFB55D /* UsersListViewController.swift */,
+				292A31A81E076C8500D0CCB9 /* ViewModel */,
+				292A31A91E076C8D00D0CCB9 /* ViewController */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -172,10 +216,77 @@
 		29FDC6CC1E0704E600EFB55D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				29552BBF1E076A1E00CF8970 /* CustomViews */,
 				29FDC6CD1E0704E600EFB55D /* LaunchScreen.storyboard */,
 				29FDC6CF1E0704E600EFB55D /* Main.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		29FDC6E91E070F8100EFB55D /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				29FDC6FC1E0713A500EFB55D /* DTO */,
+				29FDC6EA1E070F8100EFB55D /* Plugins */,
+				29FDC6EB1E070F8100EFB55D /* Usecases */,
+			);
+			name = Business;
+			path = "Hunt Developers/Business";
+			sourceTree = SOURCE_ROOT;
+		};
+		29FDC6EA1E070F8100EFB55D /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				29552BAE1E07590D00CF8970 /* Persistence */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		29FDC6EB1E070F8100EFB55D /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				29FDC6F21E0711DE00EFB55D /* GetUserDetails */,
+				29FDC6F41E0711DE00EFB55D /* GetUsers */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		29FDC6F21E0711DE00EFB55D /* GetUserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				29FDC6F31E0711DE00EFB55D /* ConcreteGetUserDetails.swift */,
+				29FDC6FA1E07137200EFB55D /* GetUserDetails.swift */,
+			);
+			path = GetUserDetails;
+			sourceTree = "<group>";
+		};
+		29FDC6F41E0711DE00EFB55D /* GetUsers */ = {
+			isa = PBXGroup;
+			children = (
+				29FDC6F51E0711DE00EFB55D /* GetUsers.swift */,
+				29FDC7061E0715A200EFB55D /* ConcreteGetUsers.swift */,
+			);
+			path = GetUsers;
+			sourceTree = "<group>";
+		};
+		29FDC6FC1E0713A500EFB55D /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				29FDC6FD1E0713B200EFB55D /* User.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		29FDC7011E07150100EFB55D /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				29FDC7121E07339D00EFB55D /* PluginsContainer.swift */,
+				29FDC7021E07150100EFB55D /* UseCasesContainer.swift */,
+				29FDC7081E072E0A00EFB55D /* AppCore.swift */,
+				29FDC70A1E07300C00EFB55D /* Router.swift */,
+				29552BBD1E0767CA00CF8970 /* Configurations.swift */,
+			);
+			path = Containers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +339,6 @@
 				TargetAttributes = {
 					29F3EAEA1E05302900568313 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = X95DNF4WX8;
 						ProvisioningStyle = Automatic;
 					};
 					29F3EB011E05302900568313 = {
@@ -283,14 +393,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29FDC6D61E0704E600EFB55D /* ViewController.swift in Sources */,
-				29FDC6D31E0704E600EFB55D /* ProfileTitleCell.swift in Sources */,
+				29FDC6FE1E0713B200EFB55D /* User.swift in Sources */,
+				29552BC51E076A1E00CF8970 /* MoreInfoCell.swift in Sources */,
+				29FDC6D61E0704E600EFB55D /* UserDetailsViewController.swift in Sources */,
 				29FDC6D71E0704E600EFB55D /* UserListViewModel.swift in Sources */,
-				29FDC6D21E0704E600EFB55D /* MoreInfoCell.swift in Sources */,
+				29552BC41E076A1E00CF8970 /* ContentCell.swift in Sources */,
+				29FDC70B1E07300C00EFB55D /* Router.swift in Sources */,
+				29552BBE1E0767CA00CF8970 /* Configurations.swift in Sources */,
+				29FDC7071E0715A200EFB55D /* ConcreteGetUsers.swift in Sources */,
+				29552BC61E076A1E00CF8970 /* ProfileTitleCell.swift in Sources */,
+				29FDC7031E07150100EFB55D /* UseCasesContainer.swift in Sources */,
 				29F3EAEF1E05302900568313 /* AppDelegate.swift in Sources */,
+				29FDC7091E072E0A00EFB55D /* AppCore.swift in Sources */,
+				29FDC7131E07339D00EFB55D /* PluginsContainer.swift in Sources */,
+				29FDC6FB1E07137200EFB55D /* GetUserDetails.swift in Sources */,
+				29FDC6F71E0711DE00EFB55D /* GetUsers.swift in Sources */,
 				29FDC6D81E0704E600EFB55D /* UsersListViewController.swift in Sources */,
 				29FDC6D41E0704E600EFB55D /* Hunt_Developers.xcdatamodeld in Sources */,
-				29FDC6D11E0704E600EFB55D /* ContentCell.swift in Sources */,
+				29FDC7111E07337000EFB55D /* PersistenceManager.swift in Sources */,
+				29FDC6F61E0711DE00EFB55D /* ConcreteGetUserDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +419,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29F3EB071E05302900568313 /* Hunt_DevelopersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,9 +549,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X95DNF4WX8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Hunt Developers/Info.plist";
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DCOLOR";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.noorg.Hunt-Developers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -442,9 +564,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X95DNF4WX8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Hunt Developers/Info.plist";
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DCOLOR";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.noorg.Hunt-Developers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;

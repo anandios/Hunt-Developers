@@ -13,24 +13,81 @@ protocol UserListViewModelDelegate {
     func noUpdatesLoaded()
 }
 
-class UserListViewModel {
-    var delegate: UserListViewModelDelegate? = nil
-    let name = "Thomas"
-    let username = "tmos"
-    let imageUrl = "https://avatars.githubusercontent.com/u/1618732?v=3"
-    let joinedAt = "2012-04-06T13:51:07Z"
-    let title = "Java Developers (github)"
+struct UserObject {
+    var name: String
+    var userName: String
+    var profileImageUrl: String
+    var joinedAt: String
     
-    public var numberOfItems = 10
+}
+
+protocol UserListViewModel  {
+    
+    var delegate: UserListViewModelDelegate? { get set }
+    var title: String { get }
+    var itemSelectedCommand:((_ index: Int) -> ())? { set get }
+    var users: [UserObject] { get }
+
+    func didReachLastItem()
+    func didSelectItem(_ index: Int)
+    
+}
+
+class ConcreteUserListViewModel : NSObject, UserListViewModel {
+    var delegate: UserListViewModelDelegate? = nil
+    var title: String
+    let appCore: AppCore
+    var users: [UserObject] = Array()
+    
+    var itemSelectedCommand:((_ index: Int) -> ())?
+    
+    init(appCore: AppCore) {
+        self.appCore = appCore
+        self.appCore.useCases.getUsersUseCase?.getUsers()
+        self.title = "Java Developers"
+        super.init()
+        self.appCore.useCases.getUsersUseCase?.delegate = self
+        
+        if let users = self.appCore.useCases.getUsersUseCase?.users {
+            self.users = convertUsers(users)
+
+            if self.users.count > 0 {
+                delegate?.datasourceUpdate()
+            } else {
+                delegate?.noUpdatesLoaded()
+            }
+
+        }
+    }
+    
+    public func didSelectItem(_ index: Int) {
+        if let block = itemSelectedCommand {
+            block(index)
+        }
+    }
     
     public func didReachLastItem() {
-        Timer.scheduledTimer(withTimeInterval: 2, repeats: false, block: {[weak self](timer) in
-            if (self?.numberOfItems)! < 30 {
-                self?.numberOfItems += 10
-                self?.delegate?.datasourceUpdate()
-            } else {
-                self?.delegate?.noUpdatesLoaded()
-            }
-        })
+    }
+    
+    func convertUsers(_ users:[User]) -> [UserObject] {
+        
+        var usersArray:[UserObject] = Array()
+        
+        for user in users {
+            let userObj = UserObject.init(name: user.name, userName: user.userName, profileImageUrl: user.profileImageUrl, joinedAt: user.joinedAt)
+            usersArray.append(userObj)
+        }
+        return usersArray
+    }
+}
+
+extension ConcreteUserListViewModel : GetUsersDelegate {
+    func didLoadUsers(_ users: [User]) {
+        self.users = convertUsers(users)
+        if self.users.count > 0 {
+            delegate?.datasourceUpdate()
+        } else {
+            delegate?.noUpdatesLoaded()
+        }
     }
 }
